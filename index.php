@@ -53,9 +53,7 @@ margin:20px;
  <div class="table-cell">
 <div id="container">
   <div id="mainContent">
-  	<div id="logo">
-  		<a title="Mallware Script Remover" href="http://www.sapuraglobal.com"><img alt="Mallware Script Remover" src="" border="0"></a>
-  </div>
+   
   	<h1> Mallware Script Remover</h1><br><br>
   	<?php
   
