@@ -1,0 +1,198 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: #ABB5C3;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#nest {
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  border-radius: 400px;
+  background: -webkit-linear-gradient(285deg, #ededed 0%, #bcbcbc 100%);
+  background: linear-gradient(165deg, #ededed 0%, #bcbcbc 100%);
+  margin: 0 auto;
+  box-shadow: 0 80px 180px rgba(0, 0, 0, 0.3), 5px 20px 40px rgba(0, 0, 0, 0.3), inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+#screen {
+  color: #fff;
+  z-index: 100;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: -webkit-linear-gradient(top, black 0%, #2d2d2d 100%);
+  background: linear-gradient(to bottom, black 0%, #2d2d2d 100%);
+  width: 340px;
+  height: 340px;
+  margin: 30px;
+  border-radius: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#radial {
+  position: absolute;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  opacity: 0.5;
+}
+#radial #blank {
+  position: absolute;
+  width: 94%;
+  height: 94%;
+  background-color: #000;
+  border-radius: 100%;
+  left: 3%;
+  top: 3%;
+  pointer-events: none;
+}
+#radial .tick {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  margin-left: -1px;
+  background-color: #fff;
+  pointer-events: none;
+}
+
+#home {
+  position: absolute;
+  mix-blend-mode: screen;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#home h1 {
+  position: relative;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -55px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 120px;
+  width: 100%;
+  letter-spacing: 5px;
+}
+#home #more {
+  color: fff;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  bottom: 70px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+}
+#home #status, #home h2 {
+  width: 100%;
+  font-size: 14px;
+  opacity: 0.65;
+  letter-spacing: 0.25px;
+  position: absolute;
+  top: 80px;
+  text-transform: uppercase;
+  color: #44ff88;
+  font-weight: bold;
+  text-align: center;
+}
+#home #status:before, #home #status:after, #home h2:before, #home h2:after {
+  position: absolute;
+  display: block;
+  content: '';
+  border: 2px solid #44ff88;
+}
+#home #status:before, #home h2:before {
+  top: -32px;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+#home #status:after, #home h2:after {
+  top: -28px;
+  left: 50%;
+  margin-left: -3px;
+  width: 6px;
+  height: 12px;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#nest.pressed, #nest:active {
+  -webkit-transform: scale(0.9875);
+          transform: scale(0.9875);
+}
+
+#car {
+  mix-blend-mode: screen;
+  position: relative;
+  opacity: 0;
+}
+#car img {
+  width: 260px;
+  display: block;
+  position: absolute;
+  margin-top: 80px;
+  left: 40px;
+}
+#car h2 {
+  width: 100%;
+  font-size: 16px;
+  opacity: 0.65;
+  letter-spacing: 0.25px;
+  position: absolute;
+  top: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+}
+#car h3 {
+  width: 100%;
+  font-size: 36px;
+  opacity: 0.65;
+  letter-spacing: 0.25px;
+  position: absolute;
+  top: 190px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  color: #44ff88;
+  text-shadow: 0 1px 35px rgba(68, 255, 136, 0.5);
+}
+#car h3 .small {
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+}
