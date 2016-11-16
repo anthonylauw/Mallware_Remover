@@ -54,9 +54,9 @@ margin:20px;
 <div id="container">
   <div id="mainContent">
   	<div id="logo">
-  		<a title="Malicious Script Remover" href="http://www.sapuraglobal.com"><img alt="Malicious Script Remover" src="" border="0"></a>
+  		<a title="Mallware Script Remover" href="http://www.sapuraglobal.com"><img alt="Mallware Script Remover" src="" border="0"></a>
   </div>
-  	<h1> Malicious Script Remover</h1><br><br>
+  	<h1> Mallware Script Remover</h1><br><br>
   	<?php
   
 	dir_contents_recursive($dir);
@@ -195,7 +195,7 @@ margin:20px;
 		  <div id="mainContent">
 		  	 
 		    <h1> Malicious Script Remover</h1>
-		    <p>This tool is made to cleanup malicious scripts or strings from your files on webserver with ease.</p>
+		    <p>code-scan tool to find out all the malware on the web-based files</p>
 		    <p>&nbsp;</p>
 		    <h2>Enter script/code to remove</h2>
 		    <script>
